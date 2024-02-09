@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Freelancer</title>
+    </head>    
+   
+    <body>
+
+        <nav>
+            <img src="./images/logo.jpg" alt="" class="logo">
+            
+            <ul id="menu-links">
+                <li>Home</li>
+                <li>Services</li>
+                <li>Projects</li>
+                <li>About us</li>
+            </ul>
+
+            <button class="nav-btn">Get Started <img src="./images/arrow-white.png" alt=""></button>
+
+            <img src="./images/menu.png" alt="" class="menu-icon" onclick="toogleMenu()">
+        </nav>
+
+        <div class="header">
+            <div class="header-content">
+                <h1><span>FREE</span><br><span>LANCER</span></h1>
+                <div class="btn-container">
+                    <button class="btn-dark">Request Call Back <img src="./images/phone.png" alt=""></button>
+                    <button class="btn-light">Know More <img src="./images/arrow-black.png" alt=""></button>
+                    <p>
+                        Hi, My name is Basma. I have an experience for 3 years as a front-end developer.<br>
+                        I can design your project withn few days.<br>
+                        You can communicate with me withn my email : basma.magdy998@gmail.com  
+                    </p>
+                </div>
+            </div>    
+                <img src="./images/user.jpg" alt="" class="user-image">
+        </div>
+
+        <script>
+            let navbar = document.querySelector('nav');
+            let menuLinks = document.getElementById("menu-links");
+
+            function toogleMenu(){
+                menuLinks.classList.toggle('show-menu');
+            }
+
+            window.onscroll = function (){
+                if(window.scrollY > 0){
+                    navbar.style.background ='#eefff9';
+                } else{
+                    navbar.style.background ='transparent';
+                }
+            }
+        </script>
+    </body>
+</html>
